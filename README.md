@@ -1,22 +1,24 @@
-# bitaddress.org
-JavaScript Client-Side Bitcoin Wallet Generator
+# QTUM Paper Wallet Generator
+JavaScript Client-Side QTUM Wallet Generator
 
-Now Bitcoin addresses and their corresponding private key can be conveniently 
+|![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Warning.svg/156px-Warning.svg.png) | This is currently a work in progress. |
+|---|---|
+
+Now QTUM addresses and their corresponding private key can be conveniently 
 generated in a web browser.
 
-The bitaddress.org project provides an all-in-one HTML document with embedded
-JavaScript/Css/Images. The JavaScript is readable not minified and contains no
-XMLHttpRequest's (no AJAX). The benefit of this technique is you can load the 
-JavaScript locally and trust that the JavaScript did not change after being 
-loaded. 
+This is based off the bitaddress.org project, which provides an all-in-one
+HTML document with embedded JavaScript/Css/Images.
+The JavaScript is readable not minified and contains no XMLHttpRequest's
+(no AJAX). The benefit of this technique is you can load the JavaScript
+locally and trust that the JavaScript did not change after being loaded. 
 
 Here is a link to the BitcoinTalk.org forum topic discussing this project:
 https://bitcointalk.org/index.php?topic=43496.0
 
+Please send Bitcoin DONATIONS for this project to Bitcoin Address: 
 
-Please send DONATIONS for this project to Bitcoin Address: 
 1NiNja1bUmhSoTXozBRBEtR8LeF9TGbZBN
-
 
 END USER NOTES:
 
@@ -32,9 +34,11 @@ END USER NOTES:
 
  5) BIP38 most likely will not work on mobile devices due to hardware limitations.
 
-
 Notice of Copyrights and Licenses:
 ---------------------------------------
+This project is based off code from the bitaddress.org project,
+for which they retain the copyright.
+
 The bitaddress.org project, software and embedded resources are
 copyright bitaddress.org.
 
@@ -58,8 +62,9 @@ window.BigInteger |	BSD License
 window.QRCode | MIT License
 window.Bitcoin | MIT License
 
-The bitaddress.org software is available under The MIT License (MIT)
+The QTUM Paper Wallet software is available under The MIT License (MIT)
 Copyright (c) 2011-2013 bitaddress.org
+Copyright (c) 2018 Arne-Christian Blystad
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
