@@ -1,0 +1,7 @@
+// parameters from https://github.com/qtumproject/qtum/blob/a69271a3ff0037bfd2aaad92a2ea6e8995b57ec0/src/chainparams.cpp
+var QTUM_TESTNET_PUBKEY_ADDRESS = 120;
+var QTUM_TESTNET_SCRIPT_ADDRESS = 110;
+var QTUM_TESTNET_SECRET_KEY = 239;
+var QTUM_MAINNET_PUBKEY_ADDRESS = 58;
+var QTUM_MAINNET_SCRIPT_ADDRESS = 50;
+var QTUM_MAINNET_SECRET_KEY = 128;

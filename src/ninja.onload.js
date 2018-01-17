@@ -20,9 +20,12 @@ if (ninja.getQueryString()["testnet"] == "true" || ninja.getQueryString()["testn
 	document.getElementById("testnet").style.display = "block";
 	document.getElementById("detailwifprefix").innerHTML = "'9'";
 	document.getElementById("detailcompwifprefix").innerHTML = "'c'";
-	Bitcoin.Address.networkVersion = 0x6F; // testnet
-	Bitcoin.ECKey.privateKeyPrefix = 0xEF; // testnet
+	Bitcoin.Address.networkVersion = QTUM_TESTNET_PUBKEY_ADDRESS;
+	Bitcoin.ECKey.privateKeyPrefix = QTUM_TESTNET_SECRET_KEY;
 	ninja.testnetMode = true;
+} else {
+    Bitcoin.Address.networkVersion = QTUM_MAINNET_PUBKEY_ADDRESS;
+    Bitcoin.ECKey.privateKeyPrefix = QTUM_MAINNET_SECRET_KEY;
 }
 if (ninja.getQueryString()["showseedpool"] == "true" || ninja.getQueryString()["showseedpool"] == "1") {
 	document.getElementById("seedpoolarea").style.display = "block";

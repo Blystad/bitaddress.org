@@ -41,6 +41,7 @@ module.exports = function (grunt) {
 					{ token: "//ninja.splitwallet.js", file: "./src/ninja.splitwallet.js" },
 					{ token: "//ninja.detailwallet.js", file: "./src/ninja.detailwallet.js" },
 					{ token: "//qrcode.js", file: "./src/qrcode.js" },
+					{ token: "//qtum.config.js", file: "./src/qtum.config.js" },
 					{ token: "//securerandom.js", file: "./src/securerandom.js" },
 					{ token: "//main.css", file: "./src/main.css" },
 					{ token: "//version", string: packageObject.version },
