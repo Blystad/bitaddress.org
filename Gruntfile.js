@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		combine: {
 			single: {
-				input: "./src/bitaddress-ui.html",
+				input: "./src/qtum-ui.html",
 				output: "./index.html",
 				tokens: [
 					{ token: "//biginteger.js", file: "./src/biginteger.js" },
