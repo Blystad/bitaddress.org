@@ -61,7 +61,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #paperarea .artwallet .btcaddress  
 {
 	position: absolute; top: 240px; left: 139px; z-index: 100; font-size: 10px; background-color: transparent;
-	font-weight:bold; color: #000000; margin: 0;
+	font-weight:bold; color: #FFFFFF; margin: 0;
 		-webkit-transform-origin:top left; -webkit-transform:rotate(-90deg);
 		-moz-transform-origin:top left;    -moz-transform:rotate(-90deg);
 		-ms-transform-origin:top left;     -ms-transform:rotate(-90deg);
@@ -71,7 +71,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #paperarea .artwallet .btcprivwif  
 {
 	position: absolute; top: 236px; left: 346px; z-index: 100; font-size: 7px; background-color: transparent;
-	font-weight:bold; color: #000000; margin: 0;  
+	font-weight:bold; color: #FFFFFF; margin: 0;  
 		-webkit-transform-origin:top left; -webkit-transform:rotate(-90deg);
 		-moz-transform-origin:top left;    -moz-transform:rotate(-90deg);
 		-ms-transform-origin:top left;     -ms-transform:rotate(-90deg);
@@ -236,4 +236,13 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	#detailarea .notes { display: none; }
 	#seedpoolarea { display: none; }
 	.faq { display: none; }
+}
+
+/* Qtum Changes */
+@media screen 	
+{
+    #culturemenu { display: none; }
+    .menu > #brainwallet { display: none; }
+    .menu > #vanitywallet { display: none; }
+    .menu > #splitwallet { display: none; }
 }
