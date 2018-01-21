@@ -253,6 +253,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
     .commands { background-color: rgb(157, 156, 164); border-width: 0; }
     #singlesafety { border-width: 0; }
     .paper .commands { border-width: 0; }
+    #generate { border-width: 0; }
 	#header { width: 100%; }
     .footer { width: 100%; margin: 0; color: #FFFFFF; }
     #culturemenu { display: none; }
@@ -283,6 +284,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
         margin: 19px 4px;
     }
 
+
     #paperkeyarea { padding: 10px; }
 
     #testnet { border-radius: 0; padding: 4px; margin: 19px 10px; float: right; }
@@ -290,10 +292,11 @@ input[type=checkbox] { position: relative; z-index: 20; }
     .footer a:hover { color: #232328; background-color: #e75647; }
     .footer .copyright { clear: none }
     .footer .tooltip { color: #000000 }
+    .seedpoint { background-color: rgb(46, 154, 208); }
 }
 
 #paperarea .artwallet .token {
-	top: 90px;
+	top: 60px;
 	left: 190px;
 	z-index: 100;
 	margin: 0;

@@ -30,7 +30,7 @@
 			SecureRandom.seedInt16((evt.clientX * evt.clientY));
 			ninja.seeder.showPoint(evt.clientX, evt.clientY);
 			ninja.seeder.seedCount++;
-			ninja.seeder.lastInputTime = new Date().getTime();
+			ninja.seeder.lastInputTime = timeStamp;
 			ninja.seeder.showPool();
 		}
 	},
@@ -76,13 +76,18 @@
 		}
 	},
 
+    pointIndex: 0,
 	showPoint: function (x, y) {
-		var div = document.createElement("div");
-		div.setAttribute("class", "seedpoint");
+        if (ninja.seeder.seedPoints.length < 10) {
+            var div = document.createElement("div");
+            div.setAttribute("class", "seedpoint");
+            document.body.appendChild(div);
+            ninja.seeder.seedPoints.push(div);
+        }
+        var div = ninja.seeder.seedPoints[ninja.seeder.pointIndex++ % ninja.seeder.seedPoints.length];
+
 		div.style.top = y + "px";
 		div.style.left = x + "px";
-		document.body.appendChild(div);
-		ninja.seeder.seedPoints.push(div);
 	},
 
 	removePoints: function () {
