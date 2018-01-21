@@ -97,7 +97,7 @@
 			testGetBitcoinAddressFromByteArray: function () {
 				var bytes = [4, 120, 152, 47, 64, 250, 12, 11, 122, 85, 113, 117, 131, 175, 201, 154, 78, 223, 211, 1, 162, 114, 157, 197, 155, 11, 142, 185, 225, 134, 146, 188, 181, 33, 240, 84, 250, 217, 130, 175, 76, 193, 147, 58, 253, 31, 27, 86, 62, 167, 121, 166, 170, 108, 206, 54, 163, 11, 148, 125, 214, 83, 230, 62, 68];
 				var address = ninja.publicKey.getBitcoinAddressFromByteArray(bytes);
-				if (address != "1Cnz9ULjzBPYhDw1J8bpczDWCEXnC9HuU1") {
+				if (address != "QYPyFmdTAeGN8N22iTvJkG18hVUVQDSdMa") {
 					return false;
 				}
 				return true;
@@ -462,7 +462,7 @@
 			testBugWithLeadingZeroBytePublicKey: function () {
 				var key = "5Je7CkWTzgdo1RpwjYhwnVKxQXt8EPRq17WZFtWcq5umQdsDtTP";
 				var btcKey = new Bitcoin.ECKey(key);
-				if (btcKey.getBitcoinAddress() != "1M6dsMZUjFxjdwsyVk8nJytWcfr9tfUa9E") {
+				if (btcKey.getBitcoinAddress() != "QghcyerBuiqZ55xzv5TGSFg97vns8gZfe2") {
 					return false;
 				}
 				return true;
@@ -470,7 +470,7 @@
 			testBugWithLeadingZeroBytePrivateKey: function () {
 				var key = "0004d30da67214fa65a41a6493576944c7ea86713b14db437446c7a8df8e13da";
 				var btcKey = new Bitcoin.ECKey(key);
-				if (btcKey.getBitcoinAddress() != "1NAjZjF81YGfiJ3rTKc7jf1nmZ26KN7Gkn") {
+				if (btcKey.getBitcoinAddress() != "Qhmig2XqC19V9S8ssevbrvoRGoxoXifw58") {
 					return false;
 				}
 				return true;
