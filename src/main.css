@@ -288,6 +288,8 @@ input[type=checkbox] { position: relative; z-index: 20; }
     #testnet { border-radius: 0; padding: 4px; margin: 19px 10px; float: right; }
     .footer a { color: rgb(46, 154, 208); }
     .footer a:hover { color: #232328; background-color: #e75647; }
+    .footer .copyright { clear: none }
+    .footer .tooltip { color: #000000 }
 }
 
 #paperarea .artwallet .token {
