@@ -166,11 +166,13 @@ ninja.wallets.paperwallet = {
 			keyelement = 'btcencryptedkey'
 		}
 		image = QTUM_PAPER_WALLET_IMAGE;
+		token_image = QTUM_LOGO_IMAGE;
 
 		var walletHtml =
 							"<div class='artwallet' id='artwallet" + i + "'>" +
 		//"<iframe src='bitcoin-wallet-01.svg' id='papersvg" + i + "' class='papersvg' ></iframe>" +
 								"<img id='papersvg" + i + "' class='papersvg' src='" + image + "' />" +
+								"<img id='token" + i + "' class='token' src='" + token_image + "' />" +
 								"<div id='qrcode_public" + i + "' class='qrcode_public'></div>" +
 								"<div id='qrcode_private" + i + "' class='qrcode_private'></div>" +
 								"<div class='btcaddress' id='btcaddress" + i + "'></div>" +

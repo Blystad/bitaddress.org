@@ -7,13 +7,6 @@ if (ninja.getQueryString()["unittests"] == "true" || ninja.getQueryString()["uni
 if (ninja.getQueryString()["asyncunittests"] == "true" || ninja.getQueryString()["asyncunittests"] == "1") {
 	ninja.unitTests.runAsynchronousTests(true);
 }
-// change language
-ninja.translator.extractEnglishFromDomAndUpdateDictionary();
-if (ninja.getQueryString()["culture"] != undefined) {
-	ninja.translator.translate(ninja.getQueryString()["culture"]);
-} else {
-	ninja.translator.autoDetectTranslation();
-}
 // testnet, check if testnet edition should be activated
 if (ninja.getQueryString()["testnet"] == "true" || ninja.getQueryString()["testnet"] == "1") {
 	document.getElementById("testnet").innerHTML = ninja.translator.get("testneteditionactivated");

@@ -99,7 +99,7 @@
 		// open selected tab
 		var walletType = ninja.tab.whichIsOpen();
 		if (walletType == null) {
-			ninja.tab.select("singlewallet");
+			ninja.tab.select("paperwallet");
 		} else {
 			ninja.tab.select(walletType)
 		}

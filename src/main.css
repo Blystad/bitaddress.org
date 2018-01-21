@@ -48,8 +48,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 #singlesafety { text-align: left; padding: 5px; border-top: 2px solid #009900; top: -25px; position: relative; }
 
 #main { position: relative; text-align: center; margin: 0px auto; width: 808px; }
-#logo { width: 578px; height: 80px; }
-		
+	
 #paperarea { min-height: 120px; display: none; }
 #paperarea .keyarea { border: 2px solid #009900; border-top: 0; }
 #paperarea .keyarea.art { display: block; height: auto; border: 0; font-family: Ubuntu, Arial; padding: 0; margin: 0; }
@@ -238,11 +237,66 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	.faq { display: none; }
 }
 
-/* Qtum Changes */
-@media screen 	
+@media screen
 {
+
+    body {
+        padding: 0;
+        margin: 0;
+		background-color: #232328;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    #main { flex: 1; width: 100%; background-color: #FFFFFF; }
+    .walletarea { border-width: 0; }
+    .commands { background-color: rgb(157, 156, 164); border-width: 0; }
+    #singlesafety { border-width: 0; }
+    .paper .commands { border-width: 0; }
+	#header { width: 100%; }
+    .footer { width: 100%; margin: 0; color: #FFFFFF; }
     #culturemenu { display: none; }
+	.menu > #bulkwallet { display: none; }
     .menu > #brainwallet { display: none; }
     .menu > #vanitywallet { display: none; }
     .menu > #splitwallet { display: none; }
+
+    #header > * { float: left; }
+    #logowrapper { float: left; padding: 10px; }
+    #logowrapper > * { float: left; }
+    #logowrapper div.logotext { color: #FFFFFF; padding: 14px 5px; }
+    .menu { float: left; background-color: transparent; border-radius: 0; }
+    .menu li { 
+        float: left; 
+        color: rgb(46, 154, 208); 
+        background-color: none; 
+        font-weight: bold;
+    }
+    .menu .tab {
+        margin: 19px 4px;
+        padding: 4px;
+    }
+    .menu li:hover, .menu .tab.selected, .menu .tab:hover { 
+        background-color: #e75647;
+        color: #232328;
+        border-radius: 0;
+        margin: 19px 4px;
+    }
+
+    #paperkeyarea { padding: 10px; }
+
+    #testnet { border-radius: 0; padding: 4px; margin: 19px 10px; float: right; }
+    .footer a { color: rgb(46, 154, 208); }
+    .footer a:hover { color: #232328; background-color: #e75647; }
+}
+
+#paperarea .artwallet .token {
+	top: 90px;
+	left: 190px;
+	z-index: 100;
+	margin: 0;
+	float: none;
+	display: block;
+	position: absolute;
+	padding: 5px 5px 2px 5px;
 }
